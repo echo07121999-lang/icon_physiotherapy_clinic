@@ -41,7 +41,7 @@
                 <span class="logo-text">ICON PHYSIOTHERAPY</span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -49,45 +49,58 @@
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
-                <span></span
+                <span></span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="text-rotator">
-                <div class="text-set active">
-                    <h1 class="glitch-text" data-text="ICON PHYSIOTHERAPY">ICON PHYSIOTHERAPY</h1>
-                    <p class="subtitle">Recovery is a journey</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Dr. MANJEET LOCHAB">Dr. MANJEET LOCHAB</h1>
-                    <p class="subtitle">Stronger every day</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="ICON PHYSIOTHERAPY">ICON PHYSIOTHERAPY</h1>
-                    <p class="subtitle">Pain today, Power tomorrow</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Dr. MANJEET LOCHAB">Dr. MANJEET LOCHAB</h1>
-                    <p class="subtitle">Move better, Live better</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="ICON PHYSIOTHERAPY">ICON PHYSIOTHERAPY</h1>
-                    <p class="subtitle">Take care of your body, it’s the only place you have to live</p>
-                </div>
-                <div class="text-set">
-                    <h1 class="glitch-text" data-text="Dr. MANJEET LOCHAB">Dr. MANJEET LOCHAB</h1>
-                    <p class="subtitle">Healing is not linear, physiotherapy helps you navigate every turn</p>
-                </div>
+    <!-- Contact Section -->
+    <section class="contact2" id="contact2">
+        
+        <div class="contact2-container">
+            <div class="contact2-form">
+                <form id="contact2Form">
+                    <h2 class="section-title">Book Appointment</h2>
+                    <div class="form-group">
+                        <label for="service">Select Service</label>
+                        <select id="service">
+                            <option value="Stroke Rehabilitation">Stroke Rehabilitation</option>
+                            <option value="Back Pain Treatment">Back Pain Treatment</option>
+                            <option value="Sciatica Treatment">Sciatica Treatment</option>
+                            <option value="Neuro Physiotherapy">Neuro Physiotherapy</option>
+                            <option value="General Physiotherapy">General Physiotherapy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="sendWhatsApp()">Send Message</button>
+                </form>
             </div>
-        </div>
-        <div class="cta-container">
-            <a href="book_appt.html" class="cta-button cta-primary" target="_blank">BOOK APPOINTMENT</a></br></br></hr>
-            <a href="services.html" class="cta-button cta-secondary" >Get Started</a>
-            <a href="about.html" class="cta-button cta-secondary">Learn More</a>
+           
+            
+            
         </div>
     </section>
 
@@ -103,5 +116,6 @@
         </div>
     </footer>
 <script src="main.js"></script>
+
 </body>
 </html>

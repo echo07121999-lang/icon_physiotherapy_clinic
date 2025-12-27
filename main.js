@@ -209,3 +209,35 @@ https://templatemo.com/tm-596-electric-xtra
                 }
             });
         }, 3000);
+
+        function sendWhatsApp() {
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var service = document.getElementById("service").value;
+    var date = document.getElementById("date").value;
+    var time = document.getElementById("time").value;
+    var message = document.getElementById("message").value;
+
+    if (name === "" || phone === "") {
+        alert("Please fill required fields");
+        return;
+    }
+
+    var whatsappNumber = "916376893459"; // ✅ Correct format
+
+    var text =
+        "New Appointment Request\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Service: " + service + "\n" +
+        "Preferred Date: " + date + "\n" +
+        "Preferred Time: " + time + "\n" +
+        "Message: " + message;
+
+    var url = "https://api.whatsapp.com/send?phone=" 
+              + whatsappNumber 
+              + "&text=" 
+              + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}

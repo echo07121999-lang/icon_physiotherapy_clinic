@@ -802,8 +802,8 @@
 
         /* Contact Section */
         .contact {
-            padding: 80px;
-            max-width: 1200px;
+            padding: 6%;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -1052,8 +1052,8 @@
             }
         }
           .contact2 {align-self: center;
-            padding: 100px 20px;
-            max-width: 1200px;
+            padding: 10% 2%;
+            max-width: 100%;
             margin: 0 auto;
         }
 
@@ -1130,5 +1130,5 @@
 
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(255, 94, 0, 0.5);
+            box-shadow: 0 10% 30px rgba(255, 94, 0, 0.5);
         }
